@@ -1,0 +1,42 @@
+{
+  "name": "AreaContent",
+  "type": "object",
+  "properties": {
+    "area": {
+      "type": "string",
+      "title": "\u00c1rea",
+      "enum": [
+        "Exatas",
+        "Humanas",
+        "Biol\u00f3gicas",
+        "Artes",
+        "Desenvolvimento de Sistemas",
+        "M\u00fasica"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Descri\u00e7\u00e3o do Perfil"
+    },
+    "suggested_professions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Profiss\u00f5es Sugeridas"
+    },
+    "color": {
+      "type": "string",
+      "title": "Cor (hex)"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "URL da Imagem"
+    }
+  },
+  "required": [
+    "area",
+    "description",
+    "suggested_professions"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Answer",
+  "type": "object",
+  "properties": {
+    "question_id": {
+      "type": "string",
+      "title": "ID da pergunta"
+    },
+    "content": {
+      "type": "string",
+      "title": "Conte\u00fado"
+    },
+    "author_name": {
+      "type": "string",
+      "title": "Nome do autor"
+    },
+    "author_avatar": {
+      "type": "string",
+      "title": "Avatar do autor"
+    },
+    "is_accepted": {
+      "type": "boolean",
+      "title": "Resposta aceita",
+      "default": false
+    },
+    "votes": {
+      "type": "number",
+      "title": "Votos",
+      "default": 0
+    }
+  },
+  "required": [
+    "question_id",
+    "content"
+  ]
+}
