@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 54 80% 92%;
+    --foreground: 26 30% 29%;
+    --card: 0 0% 100%;
+    --card-foreground: 26 30% 29%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 26 30% 29%;
+    --primary: 26 30% 29%;
+    --primary-foreground: 54 80% 96%;
+    --secondary: 54 80% 92%;
+    --secondary-foreground: 26 30% 29%;
+    --muted: 4 64% 90%;
+    --muted-foreground: 26 15% 45%;
+    --accent: 339 59% 86%;
+    --accent-foreground: 26 30% 29%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 339 30% 88%;
+    --input: 339 30% 88%;
+    --ring: 339 59% 86%;
+    --radius: 0.75rem;
+    --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-script: 'Caveat', cursive;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  .dark {
+    --background: 26 30% 12%;
+    --foreground: 54 80% 92%;
+    --card: 26 30% 16%;
+    --card-foreground: 54 80% 92%;
+    --popover: 26 30% 16%;
+    --popover-foreground: 54 80% 92%;
+    --primary: 54 80% 92%;
+    --primary-foreground: 26 30% 12%;
+    --secondary: 26 20% 22%;
+    --secondary-foreground: 54 80% 92%;
+    --muted: 26 20% 22%;
+    --muted-foreground: 26 10% 65%;
+    --accent: 339 59% 70%;
+    --accent-foreground: 54 80% 92%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 54 80% 92%;
+    --border: 26 20% 25%;
+    --input: 26 20% 25%;
+    --ring: 339 59% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+}
+
+@layer utilities {
+  .font-script {
+    font-family: var(--font-script);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
